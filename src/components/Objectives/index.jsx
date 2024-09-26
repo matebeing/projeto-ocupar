@@ -1,7 +1,7 @@
 import Background from '../../assets/asfalt--dark.png'
 const Objectives = () => {
     return (
-        <main className='flex flex-col gap-20 items-center  justify-center relative lg:h-screen sm:auto'>
+        <main className='flex flex-col gap-20 items-center  justify-center relative lg:h-screen sm:py-20 sm:auto'>
             <section className='flex flex-col items-center gap-10 '>
                 <h1 className=' border-l-[10px] border-l-[#F09048] pl-5 text-3xl text-[#F09048] font-bold'>Nossa missão</h1>
                 <p className='text-2xl text-center text-[#909090] w-[60rem] lg:max-w-[1100px] sm:max-w-[20rem]'>O Ocupar é um projeto construído por estudantes universitários com o propósito de democratizar o acesso à informação para que os estudantes de escola pública ocupem as universidades. </p>

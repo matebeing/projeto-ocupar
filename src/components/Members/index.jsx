@@ -37,9 +37,9 @@ const Members = () => {
         <div className='flex flex-col gap-20 items-center justify-center mt-20 relative h-auto '>
             <div className="lg:max-w-[1100px] sm:max-w-[20rem] mx-auto mt-20 mb-56 ">
                 <section className='flex flex-col items-center gap-12 '>
-                    <h1 className='border-l-[10px] border-l-[#F09048] pl-5 text-3xl text-[#F09048] font-bold'>Quem faz parte do Ocupar?</h1>
+                    <h1 className='lg:border-l-[10px] lg:border-l-[#F09048] pl-5 text-3xl text-[#F09048] font-bold sm:text-center'>Quem faz parte do Ocupar?</h1>
                     <p className="text-2xl text-[#909090] lg:w-[40rem] text-center">
-                        Somos <span className="rounded-lg bg-[#F09048] text-white p-2">estudantes e professores</span> de diferentes instituições de ensino do Brasil.
+                        Somos <span className="rounded-lg lg:bg-[#F09048] sm:text-[#F09048] lg:text-white p-2">estudantes e professores</span> de diferentes instituições de ensino do Brasil.
                     </p>
                     <img src={College} className='lg:block sm:hidden' alt="Banner de faculdades" />
                     <section>
@@ -61,7 +61,7 @@ const Members = () => {
                             </div>
                         </section>
                     </section>
-                    <p className='text-[#909090] text-2xl'>Professora Coordenadora Fábia Mônica Souza dos Santos</p>
+                    <p className='text-[#909090] text-2xl sm:text-center'>Professora Coordenadora Fábia Mônica Souza dos Santos</p>
                 </section>
             </div>
             <div style={{backgroundImage: `url(${Background})`}} className="absolute inset-0 opacity-40 bg-no-repeat bg-cover z-[-1]" ></div>
