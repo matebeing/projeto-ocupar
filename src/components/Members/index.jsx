@@ -35,13 +35,13 @@ const Members = () => {
 
     return (
         <div className='flex flex-col gap-20 items-center justify-center mt-20 relative h-auto '>
-            <div className="max-w-[1100px] mx-auto mt-20 mb-56 ">
-                <section className='flex flex-col items-center gap-12'>
+            <div className="lg:max-w-[1100px] sm:max-w-[20rem] mx-auto mt-20 mb-56 ">
+                <section className='flex flex-col items-center gap-12 '>
                     <h1 className='border-l-[10px] border-l-[#F09048] pl-5 text-3xl text-[#F09048] font-bold'>Quem faz parte do Ocupar?</h1>
-                    <p className="text-2xl text-[#909090] w-[40rem] text-center">
+                    <p className="text-2xl text-[#909090] lg:w-[40rem] text-center">
                         Somos <span className="rounded-lg bg-[#F09048] text-white p-2">estudantes e professores</span> de diferentes instituições de ensino do Brasil.
                     </p>
-                    <img src={College} alt="Banner de faculdades" />
+                    <img src={College} className='lg:block sm:hidden' alt="Banner de faculdades" />
                     <section>
                         <p className='text-2xl text-center text-[#909090] font-bold'>Membros</p>
                         <section>
