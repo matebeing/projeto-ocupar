@@ -9,11 +9,11 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="lg:flex lg:items-center lg:justify-between border-b-2 py-4">
-            <section className='flex items-center justify-between w-full lg:max-w-[1100px] sm:w-full sm:px-2 lg:mx-auto'>
+        <nav className="relative">
+            <section className='flex items-center justify-between w-full lg:max-w-[1100px] sm:w-full sm:px-2 lg:mx-auto py-4'>
                 <section className='flex flex-column'>
                     <img src={Logo} alt="logo" className='w-20' />
-                    <ul className={`lg:flex sm:hidden items-center ml-20 gap-12 flex-row text-lg font-medium ${isOpen ? 'block' : 'hidden'} lg:block`}>
+                    <ul className={`lg:flex sm:hidden items-center ml-20 gap-12 flex-row text-lg font-medium`}>
                         <li>Inicio</li>
                         <li>Projetos</li>
                         <li>Quem somos</li>
@@ -28,13 +28,21 @@ const Navbar = () => {
                     </button>
                 </section>
             </section>
+
             {isOpen && (
-                <ul className="flex flex-col items-center gap-4 lg:hidden bg-white border-b-2 p-4">
-                    <li>Inicio</li>
-                    <li>Projetos</li>
-                    <li>Quem somos</li>
-                    <li>Contato</li>
-                </ul>
+                <div className="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center">
+                    <button onClick={toggleMenu} className="absolute top-4 right-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                    <ul className="flex flex-col items-center gap-4 text-lg font-medium">
+                        <li onClick={toggleMenu}>Inicio</li>
+                        <li onClick={toggleMenu}>Projetos</li>
+                        <li onClick={toggleMenu}>Quem somos</li>
+                        <li onClick={toggleMenu}>Contato</li>
+                    </ul>
+                </div>
             )}
         </nav>
     );

@@ -41,7 +41,7 @@ const Members = () => {
                     <p className="text-2xl text-[#909090] lg:w-[40rem] sm:w-full sm:px-5 text-center">
                         Somos <span className="rounded-lg lg:bg-[#F09048] sm:text-[#F09048] lg:text-white p-2">estudantes e professores</span> de diferentes instituições de ensino do Brasil.
                     </p>
-                    <img src={College} className='lg:block sm:hidden' alt="Banner de faculdades" />
+                    <img src={College} className='sm:px-5' alt="Banner de faculdades" />
                     <section>
                         <p className='text-2xl text-center text-[#909090] font-bold'>Membros</p>
                         <section>
