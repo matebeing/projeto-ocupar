@@ -5,7 +5,7 @@ import bancoBanner from '../../assets/banco-de-provas-banner.png'
 const Projects = () => {
     return (
         <section className='flex flex-col gap-20 items-center justify-center mt-20 relative h-auto lg:max-w-[1100px] sm:max-w-[20rem] mx-auto'>
-             <h1 className='lg:border-l-[10px] lg:border-l-[#F09048] pl-5 text-3xl text-[#F09048] font-bold sm:text-center'>Conheça nossos projetos</h1>
+             <h1 className='lg:border-l-[10px] lg:border-l-[#F09048] pl-5 text-3xl text-[#F09048] font-bold sm:text-center'>Conheça nossas ações</h1>
             <section className='flex flex-col items-center gap-10'>
                 <section className='flex flex-col gap-28 my-20'>
                     <section className='flex lg:flex-row sm:flex-col gap-24'>
