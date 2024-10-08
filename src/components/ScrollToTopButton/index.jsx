@@ -31,7 +31,7 @@ const ScrollToTopButton = () => {
             {isVisible && (
                 <div
                     onClick={scrollToTop}
-                    className="flex items-center fixed bottom-5 cursor-pointer right-3   bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-4 rounded-full shadow-lg transition-opacity duration-300 ease-in-out z-20"
+                    className="flex items-center  fixed bottom-5 cursor-pointer right-3   bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-4 rounded-full shadow-lg transition-opacity duration-300 ease-in-out z-20"
                 >
                     Voltar para o topo
                 </div>

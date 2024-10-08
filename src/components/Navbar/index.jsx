@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Logo from '../../assets/logo.png';
+import { FaInstagram } from 'react-icons/fa';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -9,23 +10,25 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="relative">
-            <section className='flex items-center justify-between w-full lg:max-w-[1100px] sm:w-full sm:px-2 lg:mx-auto py-4'>
+        <nav className="relative border-b-[2px] border-l-gray" >
+            <section className='flex items-center justify-between lg:max-w-[1100px] sm:w-full sm:px-2 lg:mx-auto py-4'>
                 <section className='flex flex-column'>
                     <img src={Logo} alt="logo" className='w-20' />
                     <ul className={`lg:flex sm:hidden items-center ml-20 gap-12 flex-row text-lg font-medium`}>
-                        <li>Inicio</li>
                         <li>Projetos</li>
                         <li>Quem somos</li>
                         <li>Contato</li>
                     </ul>
                 </section>
-                <section className="lg:hidden">
-                    <button onClick={toggleMenu} className="focus:outline-none">
+                <section>
+                    <button onClick={toggleMenu} className="focus:outline-none lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M3 5h14a1 1 0 110 2H3a1 1 0 110-2zm0 6h14a1 1 0 110 2H3a1 1 0 110-2zm0 6h14a1 1 0 110 2H3a1 1 0 110-2z" clipRule="evenodd" />
                         </svg>
                     </button>
+                    <p className='lg:block sm:hidden'>
+                        <FaInstagram size={30}/>
+                    </p>
                 </section>
             </section>
 
@@ -37,7 +40,6 @@ const Navbar = () => {
                         </svg>
                     </button>
                     <ul className="flex flex-col items-center gap-4 text-lg font-medium">
-                        <li onClick={toggleMenu}>Inicio</li>
                         <li onClick={toggleMenu}>Projetos</li>
                         <li onClick={toggleMenu}>Quem somos</li>
                         <li onClick={toggleMenu}>Contato</li>

@@ -14,6 +14,7 @@ const Objectives = () => {
                     <li className='flex items-center justify-center border-[10px] p-20 border-[#F09048] w-40 h-40 rounded-full'>DEMOCRATIZAR</li>
                 </ul>
             </section>
+            
             <div style={{backgroundImage: `url(${Background})`}} className="absolute inset-0  bg-no-repeat bg-cover z-[-1]" ></div>
         </section>
     )

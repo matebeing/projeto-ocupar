@@ -5,7 +5,6 @@ import Projects from "../../components/Projects";
 import Members from "../../components/Members";
 import Footer from "../../components/Footer";
 import ScrollToTopButton from "../../components/ScrollToTopButton";
-import VLibras from "@djpfs/react-vlibras";
 
 const Home = () => {
     return (
