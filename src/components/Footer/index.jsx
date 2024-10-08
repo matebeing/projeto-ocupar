@@ -3,7 +3,7 @@ import LabIntegra from '../../assets/labintegra.png'
 const Footer = () => {
     return (
         <footer className="flex items-center justify-around  text-[#7a7a7a] mb-20 lg:mt-10 py-5 ">
-            <section className='flex lg:flex-row sm:flex-col lg:items-center sm:gap-5 justify-between w-full lg:max-w-[1100px] sm:max-w-[20rem] mx-auto'>
+            <section className='flex lg:flex-row sm:flex-col lg:items-center sm:gap-5 justify-between lg:max-w-[1100px] sm:w-full sm:px-5 lg:mx-auto'>
                 <section className='flex flex-column'>
                     <ul className='flex items-center justify-center gap-3 flex-row  '>
                         <li>© 2024 Projeto Ocupar</li>
