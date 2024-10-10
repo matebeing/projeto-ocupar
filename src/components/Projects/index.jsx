@@ -29,7 +29,13 @@ const Projects = () => {
                         <div className='flex flex-col gap-5'>
                             <h2 className='text-2xl font-bold text-[#F09048]'>Banco de Provas</h2>
                             <p className='text-xl text-[#909090] sm:text-justify'>O nosso objetivo é te ajudar a chegar a esses lugares que parecem tão distantes, e tudo isso através da informação, acolhimento e apoio.</p>
-                            <div className='flex justify-center items-center bg-[#F09048] w-32 p-3 text-white rounded-lg'>Saiba mais</div>
+                            <section className='flex gap-3 lg:flex-row sm:flex-col'>
+                                <p className='text-[#909090]  font-bold'>Clique para acessar </p>
+                                <div className='flex justify-center items-center w-fit  text-[#F09048] rounded-lg font-bold'>ENEM</div>
+                                <div className='flex justify-center items-center  w-fit  text-[#F09048] rounded-lg font-bold'>UERJ</div>
+                                <div className='flex justify-center items-center  w-fit text-[#F09048] rounded-lg font-bold'>CEDERJ</div>
+                                <div className='flex justify-center items-center  w-fit text-[#F09048] rounded-lg font-bold'>IFF</div>
+                            </section>
                         </div>
                     </section>
                 </section>
