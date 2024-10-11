@@ -15,9 +15,9 @@ const Navbar = () => {
                 <section className='flex flex-column'>
                     <img src={Logo} alt="logo" className='w-20' />
                     <ul className={`lg:flex sm:hidden items-center ml-20 gap-12 flex-row text-lg font-medium`}>
-                        <li>Projetos</li>
-                        <li>Quem somos</li>
-                        <li>Contato</li>
+                        <li><a href="#acoes">Ações</a></li>
+                        <li><a href="#sobre">Quem somos</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
                 </section>
                 <section>
@@ -40,9 +40,9 @@ const Navbar = () => {
                         </svg>
                     </button>
                     <ul className="flex flex-col items-center gap-4 text-lg font-medium">
-                        <li onClick={toggleMenu}>Projetos</li>
-                        <li onClick={toggleMenu}>Quem somos</li>
-                        <li onClick={toggleMenu}>Contato</li>
+                        <li onClick={toggleMenu}><a href="#acoes">Ações</a></li>
+                        <li onClick={toggleMenu}><a href="#sobre">Quem somos</a></li>
+                        <li onClick={toggleMenu}><a href="#contato">Contato</a></li>
                     </ul>
                 </div>
             )}
