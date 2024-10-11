@@ -5,6 +5,7 @@ import Projects from "../../components/Projects";
 import Members from "../../components/Members";
 import Footer from "../../components/Footer";
 import ScrollToTopButton from "../../components/ScrollToTopButton";
+import Contact from "../../components/Contact";
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
             <Objectives />
             <Projects />
             <Members />
+            <Contact/>
             <Footer />
         </div>
     )
