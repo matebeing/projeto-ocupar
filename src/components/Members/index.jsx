@@ -34,8 +34,8 @@ const Members = () => {
     setInterval(scrollLeft, 50);
 
     return (
-        <div className='flex flex-col gap-20 items-center justify-center mt-20 relative h-auto '>
-            <div className="lg:max-w-[1100px]  mx-auto mt-20 mb-56 ">
+        <div id='sobre' className='flex flex-col gap-20 items-center justify-center mt-20 relative h-auto '>
+            <div className="lg:max-w-[1100px]  mx-auto mt-20 mb-32 ">
                 <section className='flex flex-col items-center gap-12 '>
                     <h1 className='lg:border-l-[10px] lg:border-l-[#F09048] pl-5 text-3xl text-[#F09048] font-bold sm:text-center'>Quem faz parte do Ocupar?</h1>
                     <p className="text-2xl text-[#909090] lg:w-[40rem] sm:w-full sm:px-5 text-center">

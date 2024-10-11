@@ -18,7 +18,6 @@ const Home = () => {
             <Objectives />
             <Projects />
             <Members />
-            <Contact />
             <Footer />
         </div>
     )
