@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import College from '../../assets/colleges.png'
 import Background from '../../assets/asfalt--dark.png'
+import { motion } from "motion/react"
 
 const Members = () => {
     const [data, setData] = useState([]);
@@ -41,7 +42,12 @@ const Members = () => {
                     <p className="text-2xl text-[#909090] lg:w-[40rem] sm:w-full sm:px-5 text-center">
                         Somos <span className="rounded-lg lg:bg-[#F09048] sm:text-[#F09048] lg:text-white p-2">estudantes e professores</span> de diferentes instituições de ensino do Brasil.
                     </p>
-                    <img src={College} className='sm:px-5' alt="Banner de faculdades" />
+                    <motion.div
+                        initial={{  opacity: 0, scale: 0  }}
+                        whileInView={{opacity: 1, scale: 1 }}
+                    >
+                        <img src={College} className='sm:px-5' alt="Banner de faculdades" />
+                    </motion.div>
                     <section>
                         <p className='text-2xl text-center text-[#909090] font-bold'>Membros</p>
                         <section>
@@ -58,6 +64,7 @@ const Members = () => {
                                         ))
                                     }
                                 </div>
+                                
                             </div>
                         </section>
                     </section>

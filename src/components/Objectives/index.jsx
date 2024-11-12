@@ -1,4 +1,6 @@
 import Background from '../../assets/asfalt--dark.png'
+import { motion } from "motion/react"
+
 const Objectives = () => {
     return (
         <section className='flex flex-col gap-20 items-center  justify-center relative lg:h-screen sm:py-20 sm:auto'>
@@ -8,22 +10,34 @@ const Objectives = () => {
             </section>
             <section>
                 <ul className='flex lg:flex-row sm:flex-col gap-10 text-1xl text-[#F09048] font-extrabold'>
-                    <li className="flex items-center justify-center border-8 border-[#F09048] rounded-full w-40 h-40 relative">
+                    <motion.li className="flex items-center justify-center border-8 border-[#F09048] rounded-full w-40 h-40 relative"
+                        initial={{  opacity: 0, scale: 0  }}
+                        whileInView={{opacity: 1, scale: 1 }}
+                    >
                         <span>OCUPAR</span>
                         <div className="flex items-center justify-center text-center text-white text-2xl font-bold absolute rounded-full left-[-10px] top-[-10px] h-14 w-14 bg-[#F09048]">1</div>
-                    </li>
-                    <li className="flex items-center justify-center border-8 border-[#F09048] rounded-full w-40 h-40 relative">
+                    </motion.li>
+                    <motion.li className="flex items-center justify-center border-8 border-[#F09048] rounded-full w-40 h-40 relative" 
+                        initial={{  opacity: 0, scale: 0  }}
+                        whileInView={{opacity: 1, scale: 1 }}
+                    >
                         <span>INFORMAR</span>
                         <div className="flex items-center justify-center text-white text-2xl font-bold absolute rounded-full left-[-10px] top-[-10px] h-14 w-14 bg-[#F09048]">2</div>
-                    </li>
-                    <li className="flex items-center justify-center border-8 border-[#F09048] rounded-full w-40 h-40 relative">
+                    </motion.li>
+                    <motion.li className="flex items-center justify-center border-8 border-[#F09048] rounded-full w-40 h-40 relative"                        
+                        initial={{  opacity: 0, scale: 0  }}
+                        whileInView={{opacity: 1, scale: 1 }}
+                    >
                         <span>DIVERSIFICAR</span>
                         <div className="flex items-center justify-center text-white text-2xl font-bold absolute rounded-full left-[-10px] top-[-10px] h-14 w-14 bg-[#F09048]">3</div>
-                    </li>
-                    <li className="flex items-center justify-center border-8 border-[#F09048] rounded-full w-40 h-40 relative">
+                    </motion.li>
+                    <motion.li className="flex items-center justify-center border-8 border-[#F09048] rounded-full w-40 h-40 relative"                       
+                        initial={{  opacity: 0, scale: 0  }}
+                        whileInView={{opacity: 1, scale: 1 }}
+                    >
                         <span>DEMOCRATIZAR</span>
                         <div className="flex items-center justify-center text-white text-2xl font-bold absolute rounded-full left-[-10px] top-[-10px] h-14 w-14 bg-[#F09048]">4</div>
-                    </li>
+                    </motion.li>
                 </ul>
             </section>
             
