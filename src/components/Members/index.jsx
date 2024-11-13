@@ -49,7 +49,7 @@ const Members = () => {
                         <img src={College} className='sm:px-5' alt="Banner de faculdades" />
                     </motion.div>
                     <section>
-                        <p className='text-2xl text-center text-[#909090] font-bold'>Membros</p>
+                        <p className='text-2xl text-center text-[#F09048] font-bold'>Membros</p>
                         <section>
                             <div className='flex lg:w-[85vw] sm:w-[95vw] my-20 overflow-x-hidden' ref={containerRef}>
                                 <div className='flex gap-10'>
