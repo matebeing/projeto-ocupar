@@ -51,7 +51,10 @@ const Members = () => {
                     <section>
                         <p className='text-2xl text-center text-[#F09048] font-bold'>Membros</p>
                         <section>
-                            <div className='flex lg:w-[85vw] sm:w-[95vw] my-20 overflow-x-hidden' ref={containerRef}>
+                            <motion.div className='flex lg:w-[85vw] sm:w-[95vw] my-20 overflow-x-hidden' ref={containerRef}
+                                initial={{  opacity: 0, scale: 0  }}
+                                whileInView={{opacity: 1, scale: 1 }}
+                            >
                                 <div className='flex gap-10'>
                                     {
                                         data.map((member, index) => (
@@ -64,8 +67,7 @@ const Members = () => {
                                         ))
                                     }
                                 </div>
-                                
-                            </div>
+                            </motion.div>
                         </section>
                     </section>
                     <p className='text-[#909090] text-2xl sm:text-center sm:w-full sm:px-5'>Professora Coordenadora Fábia Mônica Souza dos Santos</p>
